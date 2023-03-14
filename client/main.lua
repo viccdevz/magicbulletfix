@@ -23,7 +23,7 @@ function checkKillerHasLOS(attacker, victim, killerClientId)
         Wait(1500)
     end
 
-    if (attempt >= Config.Tolerance) then
+    if (attempt >= Config.BanAyar) then
         TriggerServerEvent("vicc:magicbulletfix", GetPlayerServerId(killerClientId), "Magic Bullet", "Oyuncu duvardan birini vurmaya çalıştı.")
     end
 end
