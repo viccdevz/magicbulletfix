@@ -1,4 +1,4 @@
-# vicc-magicbulletfix
+# magicbulletfix
 - TR: Fivem için duvar arkası vurmayı engeller.
 - EN: Blocking behind-the-wall hitting for Fivem
 ![image](https://user-images.githubusercontent.com/123509837/220655721-8fc53ad1-b030-4b9b-9d67-86f3a42123b6.png)
