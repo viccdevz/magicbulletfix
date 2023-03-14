@@ -10,8 +10,8 @@
 - Banlanan kişiyi webhook aracılığıyla logunu yolluyor (Sends the log of the banned person via webhook)
 - İsteğe bağlı webhook açılıp kapanabilir (Optional webhook can be turned on and off)
 - Webhook icon isim vb. tamamen ayarlanabilir (Webhook icon name etc. fully adjustable)
--Duvar arkası kaç kişiyi öldürünce banlama ayarı var. Örnek veriyorum 3 yaparsanız duvar arkası 3. kişiyi vurduğu zaman banlayacaktır. Bu sayede yanlışlıkla banın önüne geçerseniz (...)
--Kişi banlandığı  zaman ekrana çıkması gereken yazı tamamen ayarlanabilir (The text that should appear on the screen when the person is banned can be completely adjusted)
+- Duvar arkası kaç kişiyi öldürünce banlama ayarı var. Örnek veriyorum 3 yaparsanız duvar arkası 3. kişiyi vurduğu zaman banlayacaktır. Bu sayede yanlışlıkla banın önüne geçerseniz (...)
+- Kişi banlandığı  zaman ekrana çıkması gereken yazı tamamen ayarlanabilir (The text that should appear on the screen when the person is banned can be completely adjusted)
 - 0.01 - 0.02 Resmon
 - Çok ayrıntılı ve kolay düzenlenebilir Config dosyası (Very detailed and easy editable Config file)
 
