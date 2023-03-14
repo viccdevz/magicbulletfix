@@ -36,7 +36,7 @@ function ExtractIdentifiers(src)
 end
 
 function SendDiscord(source,title,des,color)
-    if GetPlayerName(source) == nil or Config.WebhookURL == "" or Config.SendWebhook == false then
+    if GetPlayerName(source) == nil or Config.WebhookURL == "" or Config.WebHookGonder == false then
         return
     end
 
@@ -51,7 +51,7 @@ function SendDiscord(source,title,des,color)
         ["color"] = color,
         ["fields"] = {
             { ["name"] = "Kullanıcı Bilgileri", ["value"] = "\n**İsim:** "..GetPlayerName(source).."\n**IC ID:** "..source.."\n**Ping:** "..GetPlayerPing(source).."\n**IP:** "..string.gsub(id.ip, "ip:", "").."\n**Steam:** "..id.steam.."\n**FiveM:** "..id.fivem.."\n**License:** "..id.license.."\n**Token:** ".. id.tokens .."\n**Discord:** <@!"..string.gsub(id.discord, "discord:", "")..">\n**XBL:** "..id.xbl.."\n**Live:** "..id.live, ["inline"] = true },
-            { ["name"] = "Hile Detayları", ["value"] = "\n**Sebep:** "..title.."\n**Deyatylar:** "..des.."", ["inline"] = true },
+            { ["name"] = "Hile Detayları", ["value"] = "\n**Sebep:** "..title.."\n**Detaylar:** "..des.."", ["inline"] = true },
             { ["name"] = "Sunucu İsmi", ["value"] = "```"..GetConvar("sv_hostname").."```" }
         },
         ["footer"] = {
@@ -68,9 +68,9 @@ RegisterServerEvent("vicc:magicbulletfix", function(source, subject, description
     local src = source
     if (Config.Ban) then
         SendDiscord(src, subject, description, 0000000)
-        Config.BanFunction(src)
+        Config.BanAyar(src)
     else
         SendDiscord(src, subject, description, 0000000)
-        DropPlayer(src, Config.DropMessage)
+        DropPlayer(src, Config.KickBanMesaj)
     end
 end)
