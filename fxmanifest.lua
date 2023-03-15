@@ -1,6 +1,6 @@
 fx_version 'adamant'
 
-author 'viccdevz'
+author 'iamn0thing'
 description 'This product mainly blocks no prop files..'
 
 lua54 'yes'
